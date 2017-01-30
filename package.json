@@ -1,0 +1,35 @@
+{
+  "name": "@standard-library/galvo-surface",
+  "version": "0.1.0",
+  "description": "Not a touchpad",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel index.js --out-dir build",
+    "test": "browserify test/*.js -t [ babelify ] | tape-run | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standard-library/galvo-surface.git"
+  },
+  "author": "Standard Library",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/standard-library/galvo-surface/issues"
+  },
+  "homepage": "https://github.com/standard-library/galvo-surface#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.3.0",
+    "faucet": "^0.0.1",
+    "hammer-simulator": "^0.0.1",
+    "tape": "^4.6.3",
+    "tape-run": "^2.1.5"
+  },
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "kefir": "^3.7.0"
+  }
+}
