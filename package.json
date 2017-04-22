@@ -1,6 +1,6 @@
 {
   "name": "@standard-library/galvo-dom-surface",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Not a touchpad",
   "main": "build/index.js",
   "scripts": {
