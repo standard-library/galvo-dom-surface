@@ -1,4 +1,4 @@
-# galvo-surface
+# galvo-dom-surface
 
 A function that, given an element, creates streams for swiping around. Currently supports swiping left and right and generic swiping. (Pull requests welcome.)
 
@@ -7,13 +7,13 @@ Implemented using Kefir.js and Hammer.js.
 ## Installation
 
 ```shell
-yarn add @standard-library/galvo-surface
+yarn add @standard-library/galvo-dom-surface
 ```
 
 ## Usage
 
 ```javascript
-import surface from "@standard-library/galvo-surface";
+import surface from "@standard-library/galvo-dom-surface";
 
 const touchpad = surface(document.querySelector(".touchpad"));
 
@@ -29,7 +29,7 @@ Using [galvo](https://github.com/standard-library/galvo) this event stream can b
 
 ```javascript
 import galvo from "@standard-library/galvo";
-import surface from "@standard-library/galvo-surface";
+import surface from "@standard-library/galvo-dom-surface";
 
 const { swipe } = surface(document.querySelector(".touchpad"));
 const sequence = galvo({
